@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Dunia IT Indonesia - Komunitas Teknologi & Sumber Daya IT Terlengkap</title>
+    <meta name="title" content="Dunia IT Indonesia - Komunitas Teknologi & Sumber Daya IT Terlengkap">
+    <meta name="description" content="Temukan Update AI Terbaru, Tutorial IT, Tools Gratis, Strategi SEO & Blogging dari Komunitas Dunia IT Indonesia. Solusi teknologi praktis untuk kemajuan digital Anda.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dunia.it.com/">
+    <meta property="og:title" content="Dunia IT Indonesia - Komunitas Teknologi & Sumber Daya IT Terlengkap">
+    <meta property="og:description" content="Temukan Update AI Terbaru, Tutorial IT, Tools Gratis, Strategi SEO & Blogging dari Komunitas Dunia IT Indonesia. Solusi teknologi praktis untuk kemajuan digital Anda.">
+    <meta property="og:image" content="https://dunia.it.com/wp-content/uploads/2025/04/cropped-dunia-it-icon.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dunia.it.com/">
+    <meta property="twitter:title" content="Dunia IT Indonesia - Komunitas Teknologi & Sumber Daya IT Terlengkap">
+    <meta property="twitter:description" content="Temukan Update AI Terbaru, Tutorial IT, Tools Gratis, Strategi SEO & Blogging dari Komunitas Dunia IT Indonesia. Solusi teknologi praktis untuk kemajuan digital Anda.">
+    <meta property="twitter:image" content="https://dunia.it.com/wp-content/uploads/2025/04/cropped-dunia-it-icon.png">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://dunia.it.com/">
+    
+    <!-- Additional SEO Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="AI Indonesia, tutorial IT, blogging SEO, teknologi indonesia, tools AI, backlink, tutorial teknologi, berita teknologi, komunitas IT">
+    <meta name="author" content="Dunia IT Indonesia">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://dunia.it.com/wp-content/uploads/2025/04/cropped-dunia-it-icon.png">
+    <link rel="apple-touch-icon" href="https://dunia.it.com/wp-content/uploads/2025/04/cropped-dunia-it-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        secondary: '#FFD600',
+                        dark: '#121212',
+                        light: '#FFFFFF',
+                        gray1: '#F8F9FA',
+                        gray2: '#E9ECEF',
+                        accent1: '#4338CA',
+                        accent2: '#FFC107',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom CSS */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #5D5CDE 0%, #4338CA 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+        
+        .wave-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%235D5CDE' fill-opacity='0.1' d='M0,224L48,192C96,160,192,96,288,96C384,96,480,160,576,197.3C672,235,768,245,864,229.3C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .dots-pattern {
+            background-image: radial-gradient(#5D5CDE 2px, transparent 2px);
+            background-size: 24px 24px;
+            background-color: transparent;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #5D5CDE, #4338CA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #5D5CDE 0%, #4338CA 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(77, 75, 222, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #5D5CDE;
+            border: 2px solid #5D5CDE;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #5D5CDE;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card:hover .icon-circle {
+            background-color: #5D5CDE;
+            color: white;
+        }
+        
+        .article-card {
+            overflow: hidden;
+        }
+        
+        .article-card img {
+            transition: transform 0.5s ease;
+        }
+        
+        .article-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Dark Mode */
+        .dark .hero-gradient {
+            background: linear-gradient(135deg, #4338CA 0%, #2D2A8C 100%);
+        }
+        
+        .dark .wave-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%234338CA' fill-opacity='0.2' d='M0,224L48,192C96,160,192,96,288,96C384,96,480,160,576,197.3C672,235,768,245,864,229.3C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E");
+        }
+        
+        .tools-gradient {
+            background: linear-gradient(to right, rgba(93, 92, 222, 0.8), rgba(67, 56, 202, 0.8));
+        }
+        
+        /* Preloader Animation */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid #5D5CDE;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .dark #preloader {
+            background-color: #121212;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #5D5CDE;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4338CA;
+        }
+        
+        .dark ::-webkit-scrollbar-track {
+            background: #2d2d2d;
+        }
+    </style>
+</head>
+<body class="bg-gray1 dark:bg-dark text-gray-800 dark:text-gray-200">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-dark shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="https://dunia.it.com/" class="flex items-center space-x-2">
+                    <img src="https://dunia.it.com/wp-content/uploads/2025/04/cropped-dunia-it-icon.png" alt="Dunia IT Logo" class="h-10 w-10">
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">Dunia IT Indonesia</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Tentang</a>
+                    <a href="#categories" class="font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Kategori</a>
+                    <a href="#tools" class="font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Tools</a>
+                    <a href="#articles" class="font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Artikel</a>
+                    <a href="https://dunia.it.com/" class="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-accent1 transition-colors">Kunjungi Blog</a>
+                </div>
+                
+                <!-- Dark Mode Toggle & Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle" class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden pt-4 pb-2">
+                <div class="flex flex-col space-y-3">
+                    <a href="#about" class="py-2 font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Tentang</a>
+                    <a href="#categories" class="py-2 font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Kategori</a>
+                    <a href="#tools" class="py-2 font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Tools</a>
+                    <a href="#articles" class="py-2 font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors">Artikel</a>
+                    <a href="https://dunia.it.com/" class="py-2 px-4 bg-primary text-white rounded-full font-medium hover:bg-accent1 transition-colors text-center">Kunjungi Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-16 md:pt-40 md:pb-24 px-4 wave-pattern">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                        Sumber Terlengkap Dunia Teknologi Indonesia
+                    </h1>
+                    <p class="text-lg md:text-xl text-white/90 mb-8">
+                        Temukan update terbaru AI, tutorial IT, strategi SEO, dan tools inovatif yang dibutuhkan di era digital. Dibuat oleh komunitas IT untuk semua.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://dunia.it.com/" class="btn-primary py-3 px-8 rounded-full font-medium text-white text-center">
+                            Jelajahi Blog <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#categories" class="btn-secondary py-3 px-8 rounded-full font-medium text-center">
+                            Lihat Kategori
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="flex flex-wrap gap-8 mt-12">
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-white">7+</p>
+                            <p class="text-white/80">Kategori Konten</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-white">100+</p>
+                            <p class="text-white/80">Artikel Informatif</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                            <p class="text-3xl font-bold text-white">3</p>
+                            <p class="text-white/80">Tools Eksklusif</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block relative">
+                    <div class="absolute -top-20 -left-20 w-64 h-64 bg-accent2/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+                    <div class="relative animate-float">
+                        <img src="https://pfst.cf2.poecdn.net/base/image/75747cdb12a64bc5d2385b477add84bd2f388251f91275cb7fdb3850a7f938de?w=512&h=512" alt="Dunia IT Indonesia Logo" class="mx-auto rounded-2xl shadow-2xl">
+                        <div class="absolute -bottom-4 -right-4 bg-white dark:bg-dark p-3 rounded-xl shadow-lg">
+                            <div class="text-primary font-bold">Dunia IT</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400">Solusi IT Terkini</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-white dark:bg-dark">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Tentang Dunia IT Indonesia</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                    Dunia IT Indonesia hadir sebagai panduan lengkap untuk membantu Anda menguasai teknologi terkini. Dari perkembangan AI terbaru hingga strategi SEO yang efektif, kami memberikan informasi terpercaya untuk kemajuan digital Anda.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray1 dark:bg-gray-800 p-6 rounded-xl">
+                    <div class="icon-circle w-14 h-14 bg-gray-100 dark:bg-gray-700 text-primary flex items-center justify-center rounded-full mb-4">
+                        <i class="fas fa-newspaper text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Konten Berkualitas</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Artikel yang ditulis dengan bahasa yang mudah dipahami dan diperbarui secara berkala dengan informasi terkini.
+                    </p>
+                </div>
+                
+                <div class="feature-card bg-gray1 dark:bg-gray-800 p-6 rounded-xl">
+                    <div class="icon-circle w-14 h-14 bg-gray-100 dark:bg-gray-700 text-primary flex items-center justify-center rounded-full mb-4">
+                        <i class="fas fa-tools text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tools Eksklusif</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Akses gratis ke berbagai tools AI yang memudahkan pekerjaan Anda, dari generator artikel hingga kreator lirik musik.
+                    </p>
+                </div>
+                
+                <div class="feature-card bg-gray1 dark:bg-gray-800 p-6 rounded-xl">
+                    <div class="icon-circle w-14 h-14 bg-gray-100 dark:bg-gray-700 text-primary flex items-center justify-center rounded-full mb-4">
+                        <i class="fas fa-users text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Komunitas Aktif</h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Bergabunglah dengan ribuan penggemar teknologi untuk berbagi pengetahuan dan pengalaman di dunia IT.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-20 px-4 bg-gray1 dark:bg-gray-900 dots-pattern">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Kategori Konten</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                    Temukan beragam topik menarik yang sesuai dengan kebutuhan dan minat Anda di dunia teknologi
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Category -->
+                <a href="https://dunia.it.com/category/ai/" class="card-hover block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-robot text-6xl text-white/80 group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Artificial Intelligence</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Update terbaru tentang perkembangan dunia AI, dari Gemini hingga tools inovatif seperti PixVerse dan Suno AI.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Artikel</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- News Category -->
+                <a href="https://dunia.it.com/category/news/" class="card-hover block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-cyan-500 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-newspaper text-6xl text-white/80 group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Berita Teknologi</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Berita terkini dari dunia teknologi, termasuk peluncuran SpaceX, skandal Worldcoin, dan tren AI terbaru.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Artikel</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Resource Category -->
+                <a href="https://dunia.it.com/category/resource/" class="card-hover block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-gradient-to-r from-emerald-500 to-teal-500 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-book text-6xl text-white/80 group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Sumber Daya</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Koleksi sumber daya bermanfaat untuk pengembangan IT, termasuk social signal, SEO, dan pengetahuan UX/UI.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Artikel</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Blogging Category -->
+                <a href="https://dunia.it.com/category/blogging/" class="card-hover block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-gradient-to-r from-orange-500 to-amber-500 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-pen-fancy text-6xl text-white/80 group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Blogging & SEO</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Panduan lengkap tentang blogging, SEO, optimasi konten, dan strategi untuk meningkatkan peringkat website.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Artikel</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Tutorial Category -->
+                <a href="https://dunia.it.com/category/tutorial/" class="card-hover block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-gradient-to-r from-red-500 to-pink-500 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-6xl text-white/80 group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Tutorial</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Langkah-langkah praktis untuk berbagai kebutuhan IT, mulai dari verifikasi PayPal hingga Service Account Google.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Artikel</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Backlink Category -->
+                <a href="https://dunia.it.com/category/backlink/" class="card-hover block bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg group">
+                    <div class="h-48 bg-gradient-to-r from-violet-500 to-purple-500 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-link text-6xl text-white/80 group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Backlink</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Informasi mendalam tentang backlink, termasuk citation backlink dan strategi membangun profil backlink yang kuat.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Artikel</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="py-20 px-4 tools-gradient text-white">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Tools Eksklusif</h2>
+                <p class="text-lg text-white/90">
+                    Tingkatkan produktivitas dan kreativitas Anda dengan tools AI inovatif yang dikembangkan khusus oleh Dunia IT Indonesia
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- AI Article Generator -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-all duration-300 card-hover">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-pen-to-square text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">AI Article Humanis Generator</h3>
+                    <p class="text-white/80 mb-6 text-center">
+                        Ciptakan artikel berkualitas tinggi dengan sentuhan manusiawi yang lolos dari pendeteksi AI. Sempurna untuk blogger dan penulis konten.
+                    </p>
+                    <a href="https://dunia.it.com/article-generator/" class="block text-center py-3 px-6 bg-white text-primary rounded-full font-medium hover:bg-opacity-90 transition-colors mx-auto w-full">
+                        Coba Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Suno Lyrics Generator -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-all duration-300 card-hover">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-music text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Suno Lirik & Prompt Generator</h3>
+                    <p class="text-white/80 mb-6 text-center">
+                        Buat lirik profesional dan prompt musik yang sempurna untuk Suno AI. Hadirkan kreativitas musik Anda ke level berikutnya.
+                    </p>
+                    <a href="https://sunogen.pages.dev/" class="block text-center py-3 px-6 bg-white text-primary rounded-full font-medium hover:bg-opacity-90 transition-colors mx-auto w-full">
+                        Coba Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Suno MP3 Downloader -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-all duration-300 card-hover">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-download text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-center">Suno MP3 Downloader</h3>
+                    <p class="text-white/80 mb-6 text-center">
+                        Unduh file MP3 dari Suno dengan mudah, baik hasil kreasi Anda sendiri maupun karya musisi lain di platform Suno.
+                    </p>
+                    <a href="https://dunia.it.com/tools-online-dunia-it/" class="block text-center py-3 px-6 bg-white text-primary rounded-full font-medium hover:bg-opacity-90 transition-colors mx-auto w-full">
+                        Coba Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Articles Section -->
+    <section id="articles" class="py-20 px-4 bg-white dark:bg-dark">
+        <div class="container mx-auto">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 gradient-text">Artikel Populer</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300">
+                    Temukan wawasan dan pengetahuan berharga dari artikel-artikel terpopuler kami
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <a href="https://dunia.it.com/pixverse-update-v4-5-fitur-baru-pro-camera-movement/" class="article-card bg-gray1 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 dark:bg-gray-700 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-video text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">AI</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">16 Mei 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 line-clamp-2 hover:text-primary transition-colors">PixVerse Update V4.5 Hadirkan Fitur Pro Camera Movement</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                            PixVerse Update V4.5 datang membawa angin segar buat kamu yang hobi bikin video pakai AI dengan fitur canggih terbaru.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Selengkapnya</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Article 2 -->
+                <a href="https://dunia.it.com/bongkar-rahasia-manfaat-social-signal-untuk-blog-web/" class="article-card bg-gray1 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 dark:bg-gray-700 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                            <i class="fas fa-share-nodes text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Resource</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">16 Mei 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 line-clamp-2 hover:text-primary transition-colors">Bongkar Rahasia Manfaat Social Signal Untuk Blog</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                            Saya yakin semua pemilik blog pasti punya impian yang sama kan? Blognya jadi tempat nongkrong banyak pembaca dan mendulang trafik berlimpah.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Selengkapnya</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Article 3 -->
+                <a href="https://dunia.it.com/apa-saja-manfaat-ai-untuk-kehidupan-sehari-hari/" class="article-card bg-gray1 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 dark:bg-gray-700 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center">
+                            <i class="fas fa-robot text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">AI</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">16 Mei 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 line-clamp-2 hover:text-primary transition-colors">Apa Saja Manfaat AI Untuk Kehidupan Sehari-Hari</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                            Pernah nggak sih kamu mikir, sebenarnya AI itu bermanfaat nggak sih buat kehidupan kita? Atau cuma bikin manusia jadi makin malas?
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Selengkapnya</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Article 4 -->
+                <a href="https://dunia.it.com/seo-difficulty-rahasia-bikin-website-nomor-1-google/" class="article-card bg-gray1 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 dark:bg-gray-700 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Resource</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">15 Mei 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 line-clamp-2 hover:text-primary transition-colors">SEO Difficulty! Rahasia Website Nomor 1 Google?</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                            Bongkar Rahasia SEO Difficulty, Eh, kamu tahu nggak sih, lagi rame banget nih dibicarain soal SEO Difficulty? Kenapa sih ini penting banget?
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Selengkapnya</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Article 5 -->
+                <a href="https://dunia.it.com/apa-saja-tujuh-poin-job-desk-ux-ui-designer/" class="article-card bg-gray1 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 dark:bg-gray-700 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-red-500 to-pink-500 flex items-center justify-center">
+                            <i class="fas fa-paintbrush text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Resource</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">15 Mei 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 line-clamp-2 hover:text-primary transition-colors">Apa Saja 7 Poin Job Desk UX/UI Designer?</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                            Katanya sih, jadi UX/UI Designer itu keren banget. Kerjanya desain tampilan aplikasi dan website yang ciamik, tapi apa saja tugasnya?
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Selengkapnya</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Article 6 -->
+                <a href="https://dunia.it.com/perbedaan-protokol-tcp-vs-udp-vpn-koneksi-jaringan/" class="article-card bg-gray1 dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 dark:bg-gray-700 overflow-hidden">
+                        <div class="w-full h-full bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center">
+                            <i class="fas fa-shield-halved text-4xl text-white"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">VPN</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-400 ml-2">15 Mei 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 line-clamp-2 hover:text-primary transition-colors">Protokol TCP vs UDP VPN: Mana yang Terbaik</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">
+                            Protokol TCP vs UDP VPN, seringkali bikin pusing, ya? Padahal ini penting banget lho buat pengalaman browsing dan streaming kamu.
+                        </p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span>Baca Selengkapnya</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://dunia.it.com/" class="btn-primary inline-block py-3 px-8 rounded-full font-medium">
+                    Lihat Semua Artikel <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gray1 dark:bg-gray-900">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto bg-primary rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
+                <!-- Decorative Patterns -->
+                <div class="absolute top-0 left-0 w-32 h-32 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute bottom-0 right-0 w-40 h-40 bg-white/10 rounded-full translate-x-1/2 translate-y-1/2"></div>
+                
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 relative z-10">
+                    Siap Menguasai Dunia Teknologi?
+                </h2>
+                <p class="text-lg text-white/90 mb-8 relative z-10">
+                    Jelajahi ratusan artikel informatif dan tools eksklusif untuk meningkatkan keterampilan digital Anda sekarang!
+                </p>
+                <a href="https://dunia.it.com/" class="inline-block py-4 px-8 bg-white text-primary rounded-full font-semibold hover:bg-gray-100 transition-colors shadow-lg relative z-10">
+                    Kunjungi Blog Dunia IT <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-dark pt-16 pb-8 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- About -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https://dunia.it.com/wp-content/uploads/2025/04/cropped-dunia-it-icon.png" alt="Dunia IT Logo" class="h-10 w-10">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">Dunia IT</span>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Menjadi sumber terpercaya untuk update teknologi, tutorial, dan sumber daya IT terkini di Indonesia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Categories -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Kategori</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://dunia.it.com/category/ai/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Artificial Intelligence</a></li>
+                        <li><a href="https://dunia.it.com/category/news/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Berita Teknologi</a></li>
+                        <li><a href="https://dunia.it.com/category/resource/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Sumber Daya</a></li>
+                        <li><a href="https://dunia.it.com/category/blogging/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Blogging & SEO</a></li>
+                        <li><a href="https://dunia.it.com/category/tutorial/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Tutorial</a></li>
+                        <li><a href="https://dunia.it.com/category/backlink/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Backlink</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Tools -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Tools</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://dunia.it.com/tools-online-dunia-it/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">AI Artikel Generator</a></li>
+                        <li><a href="https://dunia.it.com/tools-online-dunia-it/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Suno Lirik Generator</a></li>
+                        <li><a href="https://dunia.it.com/tools-online-dunia-it/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Suno MP3 Downloader</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">Tautan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://dunia.it.com/about/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Tentang Kami</a></li>
+                        <li><a href="https://dunia.it.com/privacy-policy-2/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Kebijakan Privasi</a></li>
+                        <li><a href="https://dunia.it.com/terms-of-service/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Syarat Layanan</a></li>
+                        <li><a href="https://dunia.it.com/disclaimer/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Disclaimer</a></li>
+                        <li><a href="https://dunia.it.com/contact-us/" class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 dark:border-gray-800 pt-8">
+                <p class="text-center text-gray-600 dark:text-gray-400">
+                    Copyleft - Dunia IT Indonesia &copy; 2025 | Semua konten ditulis oleh Hendy Black
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 z-50 hover:bg-accent1">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('preloader').style.opacity = '0';
+                setTimeout(function() {
+                    document.getElementById('preloader').style.display = 'none';
+                }, 500);
+            }, 500);
+        });
+        
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+        
+        // Check for system preference or saved preference
+        if (localStorage.getItem('darkMode') === 'true' || (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+        
+        darkModeToggle.addEventListener('click', function() {
+            html.classList.toggle('dark');
+            localStorage.setItem('darkMode', html.classList.contains('dark'));
+        });
+        
+        // Back to Top Button
+        window.addEventListener('scroll', function() {
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        document.getElementById('backToTopBtn').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                document.getElementById('mobileMenu').classList.add('hidden');
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+		javascript:(function() {
+    var links = document.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+        links[i].setAttribute("target", "_blank");
+    }
+})();
+    </script>
+</body>
+</html>
